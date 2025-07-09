@@ -1,53 +1,70 @@
-h1{
-    text-align: center;
-    
-;
-    flex-direction: row-reverse;
+body {
+  margin: 0;
+  padding: 0 1rem;
 }
-h6{
-    display: flex
-;
-    flex-direction: row-reverse;
-    
-}
-h7{
-    display: flex
-;
-    flex-direction: row-reverse;
-   
 
+h1 {
+  text-align: center;
 }
-h8{
-    display: flex
-;
-    flex-direction: row-reverse;
 
+main {
+  display: grid;
+  gap: 1rem;
 }
-h9{
-    display: flex
-;
-    flex-direction: row-reverse;
 
+@media (width >= 600px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
 }
-h10{
-    display: flex
-;
-    flex-direction: row-reverse;
 
+.parties {
+  display: grid;
+  gap: 1ch;
+  padding-left: 0;
+  list-style-type: none;
 }
-h2{
-    display: flex
-;
-    flex-direction: row-reverse;
-    
-}
-h4{
-    width: 200px;
-    border: 20px;
-    padding: 60px;
-    margin: 30px;
-}
-div{
 
-     box-sizing: border-box;
+.parties a {
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  padding: 1ch;
+  text-decoration: none;
+  color: black;
+}
+
+.parties a:hover {
+  background: #eee;
+  font-style: italic;
+}
+
+.parties li.selected {
+  font-weight: bold;
+  font-style: italic;
+}
+
+form {
+  display: grid;
+  gap: 1ch;
+  padding: 0 1rem;
+}
+
+label {
+  display: grid;
+}
+section {
+  flex: 1;
+}
+
+#selected {
+  min-width: 300px;
+  max-width: 400px;
+  background: #f7f7f7;
+  padding: 1rem;
+  border-radius: 8px;
+}
+main {
+  display: flex;
+  gap: 2rem;
 }
